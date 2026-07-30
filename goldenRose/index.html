@@ -3,95 +3,108 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Golden Rose is a play-for-fun social casino with virtual coins and no cash value.">
-  <title>Golden Rose | Social Casino</title>
+  <meta name="description" content="Golden Rose Casino — premium slots, live casino, poker and table games.">
+  <title>Golden Rose Casino — Play Beyond Ordinary</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header" id="top">
-    <div class="nav-shell">
-      <a class="brand" href="#top" aria-label="Golden Rose home">
-        <img src="assets/images/logo.png" alt="Golden Rose">
-        <span>GOLDEN <b>ROSE</b><small>SOCIAL PLAY</small></span>
+    <div class="nav-wrap">
+      <a class="brand" href="index.html#top" aria-label="Golden Rose Casino home">
+        <img src="assets/images/logo.png" alt="Golden Rose emblem">
+        <span><b>GOLDEN ROSE</b><small>CASINO</small></span>
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#games">Games</a><a href="#rewards">Rewards</a><a href="#community">Community</a>
+        <a href="#games">Games</a><a href="#promotions">Promotions</a><a href="#vip">VIP Club</a><a href="#why-us">Why us</a>
       </nav>
-      <button class="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"><span></span><span></span></button>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
     </div>
     <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
-      <a href="#games">Games</a><a href="#rewards">Rewards</a><a href="#community">Community</a>
+      <a href="#games">Games</a><a href="#promotions">Promotions</a><a href="#vip">VIP Club</a><a href="#why-us">Why us</a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="invitation" id="invite" aria-labelledby="intro-title">
-      <div class="coin-cluster cluster-left" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <div class="coin-cluster cluster-right" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <div class="invitation-inner">
-        <p class="kicker">WELCOME TO GOLDEN ROSE</p>
-        <h1 id="intro-title">MAKE TONIGHT<br><span>A LITTLE BRIGHTER.</span></h1>
-        <p class="intro-line">New games, a warm welcome and virtual coins to get you started.</p>
-        <div class="intro-grid">
-          <div class="hero-photo" aria-label="Colorful Golden Rose game symbols"><span class="photo-caption">PLAY YOUR WAY</span></div>
-          <div class="gift-panel">
-            <div class="gift-mark" aria-hidden="true"><span>GR</span></div>
-            <p class="gift-label">YOUR WELCOME PACK</p>
-            <div class="token-line"><i class="token token-gold">G</i><strong>2,500</strong><span>Golden Coins</span></div>
-            <div class="token-line"><i class="token token-rose">R</i><strong>30</strong><span>Rose Tokens</span></div>
-            <a class="button button-pink button-claim" href="#games">Open my gift <span aria-hidden="true">&#8594;</span></a>
-            <p class="gift-note">No purchase required. Virtual tokens only.</p>
-          </div>
+    <section class="hero" aria-labelledby="hero-title" aria-roledescription="carousel" aria-label="Golden Rose highlights">
+      <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide slide-people active"></div>
+        <div class="hero-slide slide-slots"></div>
+        <div class="hero-slide slide-vip"></div>
+        <div class="hero-slide slide-rewards"></div>
+      </div>
+      <div class="hero-content reveal" aria-live="polite">
+        <p class="eyebrow"><span></span> <b data-slide-kicker>TRUSTED ENTERTAINMENT</b></p>
+        <h1 id="hero-title" data-slide-title>Classic games.<br><em>Made welcoming.</em></h1>
+        <p class="hero-copy" data-slide-copy>Enjoy trusted casino classics, straightforward rewards and friendly support whenever you need it.</p>
+        <div class="hero-actions"><a class="text-link hero-explore" href="#games">Explore games <span>↓</span></a></div>
+        <div class="trust-row"><span>◆ Licensed &amp; secure</span><span>◆ Instant withdrawals</span><span>◆ 24/7 live support</span></div>
+      </div>
+      <div class="hero-controls">
+        <button class="hero-arrow hero-prev" aria-label="Previous slide">←</button>
+        <div class="hero-dots" role="tablist" aria-label="Choose a hero slide">
+          <button class="hero-dot active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+          <button class="hero-dot" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+          <button class="hero-dot" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+          <button class="hero-dot" role="tab" aria-selected="false" aria-label="Slide 4"></button>
         </div>
+        <span class="hero-count" aria-hidden="true"><b>01</b> / 04</span>
+        <button class="hero-arrow hero-next" aria-label="Next slide">→</button>
+        <button class="hero-pause" type="button" aria-pressed="false" aria-label="Pause slideshow">Pause</button>
       </div>
     </section>
 
-    <section class="games-section" id="games" aria-labelledby="games-title">
-      <div class="section-heading"><p class="kicker">FIND YOUR TABLE</p><h2 id="games-title">FRESH GAMES.<br><span>ZERO PRESSURE.</span></h2><p>Explore a considered mix of virtual slots, table classics and live rooms.</p></div>
+    <section class="brand-manifesto reveal" aria-label="Golden Rose philosophy"><span>EST. 2026</span><p>Not just another casino.<br><em>A world that opens for you.</em></p><i>GR</i></section>
+    <section class="ticker" aria-label="Highlights"><div><span>✦ 2,500+ GAMES</span><span>◆ LIVE EXPERIENCES</span><span>✦ WEEKLY REWARDS</span><span>◆ GOLDEN CIRCLE</span><span>✦ INSTANT PLAY</span><span>◆ MOBILE READY</span></div></section>
+
+    <section class="section games" id="games">
+      <div class="section-number">01 — PLAY</div>
+      <div class="section-head reveal"><div><p class="eyebrow">THE GAME COLLECTION</p><h2>Find a game<br><em>you know and love.</em></h2></div><p>Explore slots, live casino and trusted table classics. Choose your preferred pace and start whenever you are ready.</p></div>
+      <div class="filter-row" role="tablist" aria-label="Game filters">
+        <button class="filter active" data-filter="all" role="tab" aria-selected="true">All games</button><button class="filter" data-filter="slots" role="tab">Slots</button><button class="filter" data-filter="live" role="tab">Live casino</button><button class="filter" data-filter="table" role="tab">Table games</button>
+      </div>
       <div class="game-grid">
-        <article class="game-card slots"><div class="game-art"></div><div class="card-copy"><small>LIGHT UP THE REELS</small><h3>Neon<br>Fortune</h3><a href="#rewards">Play free <span>&#8594;</span></a></div></article>
-        <article class="game-card poker"><div class="game-art"></div><div class="card-copy"><small>THE CLASSIC TABLE</small><h3>Rose<br>Poker</h3><a href="#rewards">Play free <span>&#8594;</span></a></div></article>
-        <article class="game-card live"><div class="game-art"></div><div class="card-copy"><small>LIVE HOSTS</small><h3>Grand<br>Salon</h3><a href="#rewards">Play free <span>&#8594;</span></a></div></article>
-        <article class="game-card roulette"><div class="game-art"></div><div class="card-copy"><small>SPIN THE WHEEL</small><h3>Velvet<br>Roulette</h3><a href="#rewards">Play free <span>&#8594;</span></a></div></article>
-        <article class="game-card blackjack"><div class="game-art"></div><div class="card-copy"><small>FAN FAVORITE</small><h3>Midnight<br>21</h3><a href="#rewards">Play free <span>&#8594;</span></a></div></article>
-        <article class="game-card lounge"><div class="game-art"></div><div class="card-copy"><small>MEMBERS' PICK</small><h3>Rose<br>Lounge</h3><a href="#rewards">Play free <span>&#8594;</span></a></div></article>
-      </div>
-      <a class="button button-pink games-cta" href="#rewards">Explore the lobby <span aria-hidden="true">&#8594;</span></a>
-    </section>
-
-    <section class="community-section" id="community" aria-labelledby="community-title">
-      <div class="section-heading compact"><p class="kicker">THE ROSE REVIEW</p><h2 id="community-title">A GOOD TIME,<br><span>ON YOUR TERMS.</span></h2></div>
-      <div class="review-grid">
-        <article class="review-card"><div class="review-top"><span class="avatar avatar-one">JM</span><div><b>Jules M.</b><small>United States</small></div><span class="rating">5/5</span></div><p>The games look beautiful and I can always find something new to try after work.</p></article>
-        <article class="review-card"><div class="review-top"><span class="avatar avatar-two">AR</span><div><b>Alex R.</b><small>Canada</small></div><span class="rating">5/5</span></div><p>The welcome coins are a lovely touch. It feels easy, casual and fun from the first click.</p></article>
-        <article class="review-card"><div class="review-top"><span class="avatar avatar-three">ST</span><div><b>Sam T.</b><small>United Kingdom</small></div><span class="rating">5/5</span></div><p>I like the mix of live rooms and classic games. It is a nice way to switch off for a while.</p></article>
+        <article class="game-card card-slots reveal" data-category="slots"><div class="game-art"></div><div class="card-content"><div><small>1,400+ GAMES</small><h3>Slots</h3></div></div></article>
+        <article class="game-card card-live reveal" data-category="live"><div class="game-art"></div><div class="card-content"><div><small>LIVE NOW</small><h3>Live Casino</h3></div></div></article>
+        <article class="game-card card-poker reveal" data-category="table"><div class="game-art"></div><div class="card-content"><div><small>PRIVATE ROOMS</small><h3>Rose Poker</h3></div></div></article>
+        <article class="game-card card-roulette reveal" data-category="table"><div class="game-art"></div><div class="card-content"><div><small>CLASSIC &amp; LIVE</small><h3>Roulette</h3></div></div></article>
+        <article class="game-card card-blackjack reveal" data-category="table"><div class="game-art"></div><div class="card-content"><div><small>LOW TO VIP STAKES</small><h3>Blackjack</h3></div></div></article>
       </div>
     </section>
 
-    <section class="reward-section" id="rewards" aria-labelledby="rewards-title">
-      <div class="reward-copy"><p class="kicker">EVERY VISIT COUNTS</p><h2 id="rewards-title">COME BACK FOR<br><span>THE GOOD STUFF.</span></h2><p>Drop in for daily Golden Coins, pick up Rose Tokens and see what is waiting in the lobby.</p><div class="reward-points"><span><b>01</b> Daily coin drop</span><span><b>02</b> Weekly clubhouse gifts</span><span><b>03</b> Fresh live rooms</span></div><a class="button button-cyan" href="#invite">Join Golden Rose <span aria-hidden="true">&#8594;</span></a></div>
-      <div class="reward-photo" aria-hidden="true"><div class="phone-card"><span>DAILY DROP</span><b>2,500</b><small>GOLDEN COINS</small></div><div class="rose-token">R</div></div>
+    <section class="section promotions" id="promotions">
+      <div class="section-number">02 — REWARDS</div>
+      <div class="section-head reveal"><div><p class="eyebrow">CLEAR, SIMPLE REWARDS</p><h2>More value,<br><em>without the guesswork.</em></h2></div><p>See what is available, how it works and which terms apply before you choose an offer.</p></div>
+      <div class="promo-grid">
+        <article class="promo-card promo-feature reveal"><img src="assets/images/rewards-banner.png" alt="Golden reward chest, casino chips and rose petals"><div><span class="pill">NEW PLAYERS</span><p>UP TO</p><h3>100% <em>Bonus</em></h3><p class="promo-copy">Begin your Golden Rose story with a welcome made to remember.</p></div></article>
+        <article class="promo-card daily reveal"><span class="promo-icon">✦</span><small>EVERY DAY</small><h3>Daily<br>Rewards</h3><p>Log in. Play. Unwrap a fresh reward every single day.</p><a href="#games">Discover rewards →</a></article>
+        <article class="promo-card vip reveal" id="vip"><span class="promo-icon">♛</span><small>INVITATION AWAITS</small><h3>Golden<br>Circle</h3><p>Five tiers of bespoke rewards, personal service and elevated play.</p><a href="#vip">Enter the club →</a></article>
+      </div>
+      <p class="terms-note">18+ only. Welcome offer terms, wagering requirements and regional restrictions apply.</p>
     </section>
 
-    <section class="responsible-section" aria-labelledby="responsible-title">
-      <p class="kicker">PLAY FOR THE MOMENT</p><h2 id="responsible-title">JUST FOR FUN.<br><span>ALWAYS.</span></h2><a class="button button-cyan" href="official-rules.html">Play responsibly</a><span class="age-mark">18+</span>
+    <section class="experience" id="why-us">
+      <div class="experience-intro reveal"><p class="eyebrow">WHY PLAY WITH US</p><h2>Safe, simple and<br><em>easy to enjoy.</em></h2></div>
+      <div class="feature-grid">
+        <article class="reveal"><span>01</span><i>⌁</i><h3>Protected play</h3><p>Industry-leading encryption and independently tested games keep every moment secure.</p></article>
+        <article class="reveal"><span>02</span><i>↯</i><h3>Fast withdrawals</h3><p>Quick, transparent payments with trusted methods and no hidden surprises.</p></article>
+        <article class="reveal"><span>03</span><i>◌</i><h3>Always with you</h3><p>Real, friendly support around the clock — whenever and wherever you play.</p></article>
+        <article class="reveal"><span>04</span><i>▯</i><h3>Made for mobile</h3><p>Beautifully fluid play across every screen, with no app required.</p></article>
+      </div>
     </section>
+
+    <section class="final-cta"><img src="assets/images/header-icon.png" alt="" aria-hidden="true"><p class="eyebrow">THE GOLDEN ROSE EXPERIENCE</p><h2>Ready to feel<br><em>the difference?</em></h2><small>Beautifully crafted entertainment. Play responsibly.</small></section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-grid">
-      <div><a class="brand footer-brand" href="#top"><img src="assets/images/logo.png" alt="Golden Rose"><span>GOLDEN <b>ROSE</b><small>SOCIAL PLAY</small></span></a><p>Social casino entertainment with virtual tokens only.</p></div>
-      <div><b>Explore</b><a href="#games">All games</a><a href="#rewards">Rewards</a><a href="#community">Community</a></div>
-      <div><b>Policies</b><a href="terms.html">Terms of service</a><a href="privacy.html">Privacy policy</a><a href="official-rules.html">Official rules</a></div>
-      <div><b>Support</b><a href="#responsible-title">Play responsibly</a><a href="mailto:hello@goldenrose.example">Contact us</a><a href="#top">Back to top</a></div>
-    </div>
-    <div class="footer-legal"><p>Golden Rose offers play-for-fun games for adults aged 18 and over. No purchase is necessary. Virtual coins are provided for entertainment and have no monetary value. Void where prohibited. Please play responsibly.</p><span>&copy; 2026 Golden Rose Social Play. All rights reserved.</span></div>
+  <footer>
+    <div class="footer-main"><a class="brand footer-brand" href="index.html#top"><img src="assets/images/logo.png" alt="Golden Rose emblem"><span><b>GOLDEN ROSE</b><small>CASINO</small></span></a><p>Where timeless elegance meets the thrill of play.</p><div class="footer-links"><div><b>PLAY</b><a href="#games">Casino games</a><a href="#games">Live casino</a><a href="#promotions">Promotions</a><a href="#vip">VIP Club</a></div><div><b>LEGAL</b><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="official-rules.html">Official Rules</a></div></div></div>
+    <div class="responsible"><span class="age">18+</span><p>Golden Rose Casino supports responsible gaming. Gambling should be entertainment, not a way to make money. If play stops being fun, take a break and seek support.</p><div class="payment-marks"><span>VISA</span><span>MC</span><span>₿</span><span>◆</span></div></div>
+    <div class="copyright"><span>© 2026 Golden Rose Casino. All rights reserved.</span><span>Licensed • Secure • Responsible</span></div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
