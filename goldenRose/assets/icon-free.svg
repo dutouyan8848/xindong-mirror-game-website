@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="18" y1="12" x2="106" y2="114" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5A1BB2"/>
+      <stop offset="1" stop-color="#2A0765"/>
+    </linearGradient>
+    <linearGradient id="gold2" x1="26" y1="18" x2="100" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF09A"/>
+      <stop offset="0.45" stop-color="#FFD84A"/>
+      <stop offset="1" stop-color="#FFB11A"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="56" fill="url(#bg2)"/>
+  <circle cx="64" cy="64" r="54" stroke="url(#gold2)" stroke-width="4"/>
+  <rect x="34" y="52" width="60" height="40" rx="8" fill="url(#gold2)"/>
+  <rect x="30" y="42" width="68" height="16" rx="8" fill="#FFF8D9" stroke="url(#gold2)" stroke-width="2"/>
+  <path d="M64 42V92" stroke="#8A4A00" stroke-width="6" stroke-linecap="round"/>
+  <path d="M34 72H94" stroke="#8A4A00" stroke-width="6" stroke-linecap="round"/>
+  <path d="M61 42C53 42 48 38 48 32C48 26 53 24 58 24C63 24 66 28 66 34V42H61Z" fill="#FFF8D9" stroke="url(#gold2)" stroke-width="2"/>
+  <path d="M67 42C75 42 80 38 80 32C80 26 75 24 70 24C65 24 62 28 62 34V42H67Z" fill="#FFF8D9" stroke="url(#gold2)" stroke-width="2"/>
+  <path d="M92 34L95 40L102 41L97 46L98 53L92 49L86 53L87 46L82 41L89 40L92 34Z" fill="#FFF6BE" stroke="url(#gold2)" stroke-width="1.5"/>
+</svg>
