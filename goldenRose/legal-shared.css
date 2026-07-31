@@ -78,6 +78,53 @@ img{display:block;max-width:100%}
 .legal-links a:hover,.legal-links a:focus-visible{background:rgba(255,255,255,.06);color:#fff36c;outline:none}
 .socials{display:flex;justify-content:flex-end;gap:12px}.socials a{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(220,112,255,.45);background:rgba(52,8,113,.54);font-size:22px;transition:transform .18s ease,border-color .18s ease,color .18s ease}.socials a:hover{transform:translateY(-2px);border-color:#fff36c;color:#fff36c}
 .copyright{margin:12px 0 0;text-align:center;color:rgba(255,255,255,.58);font-size:13px;line-height:1.4}
+
+/* Shared with the homepage so legal pages retain the same site navigation. */
+.legal-site-header{
+  position:relative;
+  z-index:20;
+  background:linear-gradient(108deg,#170031 0%,#26004f 46%,#120029 100%);
+}
+.legal-header-inner{
+  width:min(1680px,calc(100vw - 72px));
+  height:104px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+}
+.legal-header-brand{display:inline-flex;align-items:center;gap:14px;min-width:0}
+.legal-header-brand img{width:66px;height:66px;object-fit:contain;filter:drop-shadow(0 8px 14px rgba(0,0,0,.26))}
+.legal-header-brand-copy{display:block;line-height:1;min-width:0}
+.legal-header-brand-copy strong{display:block;color:var(--gold);font-size:32px;font-weight:900;letter-spacing:.015em;white-space:nowrap}
+.legal-header-brand-copy small{display:block;margin-top:7px;color:#ffe15c;font-size:16px;font-weight:900;letter-spacing:.2em;white-space:nowrap}
+.legal-header-nav{display:flex;align-items:center;gap:12px}
+.legal-header-nav a{display:flex;align-items:center;min-height:44px;padding:0 16px;border-radius:12px;font-size:17px;font-weight:700;color:rgba(255,255,255,.94);transition:.2s}
+.legal-header-nav a:hover,.legal-header-nav a:focus-visible{background:rgba(255,255,255,.07);color:#fff16a;outline:none}
+.legal-menu-toggle{display:none;width:46px;height:46px;border:1px solid rgba(255,211,68,.55);border-radius:50%;background:rgba(37,4,78,.62);padding:12px}
+.legal-menu-toggle span{display:block;height:2px;margin:4px 0;background:#fff;border-radius:2px}
+.legal-mobile-nav{display:none}
+
+@media (max-width:1080px){
+  .legal-header-nav{display:none}
+  .legal-menu-toggle{display:block}
+  .legal-mobile-nav{position:absolute;top:88px;left:16px;right:16px;padding:12px;border-radius:18px;background:rgba(20,1,47,.96);border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow)}
+  .legal-mobile-nav.open{display:grid}
+  .legal-mobile-nav a{padding:14px;border-radius:10px;font-weight:700}
+  .legal-mobile-nav a:hover{background:rgba(255,255,255,.06)}
+}
+
+@media (max-width:680px){
+  .legal-header-inner{width:min(100vw - 24px,1680px);height:72px;gap:10px}
+  .legal-header-brand{gap:9px}
+  .legal-header-brand img{width:48px;height:48px}
+  .legal-header-brand-copy strong{font-size:21px}
+  .legal-header-brand-copy small{margin-top:5px;font-size:11px}
+  .legal-menu-toggle{width:40px;height:40px;padding:10px}
+  .legal-mobile-nav{top:72px;left:12px;right:12px}
+}
+
 @media (max-width: 920px){
   :root{--container:min(100vw - 20px, 100vw)}
   .site-shell{padding:10px 0 16px}
