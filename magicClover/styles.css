@@ -718,7 +718,8 @@ h3 {
   font-size: 1.05rem;
 }
 
-.legal-content ul {
+.legal-content ul,
+.legal-content ol {
   display: grid;
   gap: 10px;
   margin: 0 0 24px;
